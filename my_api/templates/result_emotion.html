@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分析结果</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>分析结果</h1>
+        {% if text %}
+            <h2>抓取的文本:</h2>
+            <p>{{ text }}</p>
+        {% endif %}
+        <div class="result">
+            <h2>情感分析结果:</h2>
+            {% for emotion in result.emotions %}
+                <p>情感类别: {{ emotion.label }}</p>
+                <p>概率: {{ emotion.prob }}</p>
+                {% if emotion.replies %}
+                    <p>回复: {{ emotion.replies }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

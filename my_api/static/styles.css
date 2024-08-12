@@ -1,0 +1,122 @@
+body {
+    background-image: url('dad3278d80028ca7a9b67110b0c1cdd.jpg');
+    /* 自定义背景图 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.form-module {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-module h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#login-form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 添加半透明背景以提高可读性 */
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#register-form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 添加半透明背景以提高可读性 */
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+form input {
+    width: 300px;
+    /* 设置输入框的宽度 */
+    margin: 10px 0;
+    /* 设置输入框之间的垂直间距 */
+    padding: 10px;
+    /* 设置输入框的内边距 */
+    border: 1px solid #ccc;
+    /* 设置输入框的边框 */
+    border-radius: 5px;
+    /* 设置输入框的圆角 */
+}
+
+form button {
+    width: 100%;
+    /* 设置按钮宽度占满整个输入框宽度 */
+    margin-top: 10px;
+    /* 设置按钮与上一个输入框的间距 */
+    padding: 10px;
+    /* 设置按钮的内边距 */
+    border: none;
+    /* 去除按钮的边框 */
+    background-color: #007bff;
+    /* 设置按钮背景色 */
+    color: white;
+    /* 设置按钮文本颜色 */
+    cursor: pointer;
+    /* 设置鼠标悬停时的光标样式 */
+    border-radius: 5px;
+    /* 设置按钮的圆角 */
+}

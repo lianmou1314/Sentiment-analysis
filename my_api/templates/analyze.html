@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyze CSV Comments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>分析上传数据内含的情绪</h2>
+    <form action="/analyze_csv" method="post" enctype="multipart/form-data">
+        <input type="file" name="csv_file" accept=".csv"><br>
+        <button type="submit">分析</button>
+    </form>
+</body>
+</html>

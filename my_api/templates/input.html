@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>直接输入文本分析</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>直接输入文本分析</h1>
+    <form action="/input" method="post">
+                <div class="form-group">
+                    <label for="text">文本:</label>
+                    <textarea id="text" name="text" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="api_type_text">API类型:</label>
+                    <select id="api_type_text" name="api_type">
+                        <option value="sentiment">情感倾向分析</option>
+                        <option value="emotion">对话情绪识别</option>
+                    </select>
+                </div>
+                <button type="submit">分析文本</button>
+            </form>
+</div>
+</body>
+</html>

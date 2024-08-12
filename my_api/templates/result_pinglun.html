@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>分析结果</h1>
+    <h2>积极内容</h2>
+    <ul>
+        {% for comment in positive_comments %}
+            <li>{{ comment }}</li>
+        {% endfor %}
+    </ul>
+    <h2>消极内容</h2>
+    <ul>
+        {% for comment in negative_comments %}
+            <li>{{ comment }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

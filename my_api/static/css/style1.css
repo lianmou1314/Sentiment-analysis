@@ -1,0 +1,414 @@
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+html, body{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 100%;
+    background: url('神子.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+}
+h1,h2,h3,h4,h5,h6,input,p,a,select{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover,body a{
+	text-decoration:none;
+}
+/*-- main --*/
+h1.agile-head {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 1.2em;
+    letter-spacing: 3px;
+	text-align:center;
+}
+.container-w3l {
+    width: 62%;
+    margin: 4em auto;
+    text-align: center;
+}
+input[type="submit"],a{
+	transition:.5s ease-in;
+	-webkit-transition:.5s ease-in;
+	-moz-transition:.5s ease-in;
+	-o-transition:.5s ease-in;
+	-ms-transition:.5s ease-in;
+}
+.center-container {
+    padding: 0em 0 1em;
+    background:rgba(0, 0, 0, 0.42);
+}
+.w3ls-agileinfo h1{
+	text-align: center;
+    color: #fff;
+    font-size: 2.8em;
+    margin: 0em 0 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.image {
+    float: left;
+    width: 50%;
+	background: rgb(13, 197, 255);
+}
+.agileits-img{
+	background:url('第一层图.jfif') no-repeat -12px 20px;
+	min-height:382px;
+	background-size:cover;
+}
+.main-head{
+	float:left;
+	width:50%;
+}
+.main-head h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: capitalize;
+	letter-spacing:1px;
+}
+/*-- //main --*/
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.form-1 .field {
+    position: relative; /* For the icon positioning */
+}
+
+.form-1 .field i {
+    /* Size and position */
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+	background:#27539f;
+    /* Line */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+    /* Styles */
+    color: #fff;
+    text-align: center;
+    line-height: 3.5em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.form-1 input[type=text], .form-1 input[type=password] {
+    font-size: 1em;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    width: 100%;
+    padding: 1em 4em;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color: #777;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+p.field {
+    margin: 2em 0;
+}
+
+.form-1 input[type=text]:hover ~ i,
+.form-1 input[type=password]:hover ~ i {
+    color: #52cfeb;
+}
+
+.form-1 input[type=text]:focus ~ i,
+.form-1 input[type=password]:focus ~ i {
+    color: #42A2BC;
+}
+p.submit {
+   width: 35%;
+    float: right;
+}
+.form-1 input[type=text]:focus,
+.form-1 input[type=password]:focus,
+.form-1 button[type=submit]:focus {
+    outline: none;
+}
+.form-1 {
+    width: 100%;
+    padding: 3em 3em 6.2em;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(0, 0, 0, 0.3), inset 0 -3px 2px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    background: white;
+    background: -moz-linear-gradient(#eeefef, #ffffff 10%);
+    background: -ms-linear-gradient(#eeefef, #ffffff 10%);
+    background: -o-linear-gradient(#eeefef, #ffffff 10%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeefef), color-stop(0.1, #ffffff));
+    background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
+    background: rgba(0, 0, 0, 0.48);
+}
+.form-1 button {
+    /* Size and position */
+    width: 100%;
+    height: 100%;
+    /* Icon styles */
+    font-size: 1.4em;
+    padding: 10px 0 2px;
+    color: white;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    border-radius: inherit;
+    background: #27539f; /* Fallback */
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        0 1px 2px rgba(0,0,0,0.35),
+        inset 0 3px 2px rgba(255,255,255,0.2),
+        inset 0 -3px 2px rgba(0,0,0,0.1);
+
+    cursor: pointer;
+}
+
+.form-1 button:hover,
+.form-1 button[type=submit]:focus {
+    background: #27539f;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.form-1 button:active {
+    background: #27539f;
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.3),
+        inset 0 3px 4px rgba(0,0,0,0.3);
+}
+.agileits_w3layouts-footer{
+	padding:0 1em 2em ;
+	text-align:center;
+}
+.agileits_w3layouts-footer p {
+    color: #fafbfd;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+h6.wthree-footer-text {
+    font-size: 1em;
+    width: 76%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.agileits_w3layouts-footer a{
+	color:rgba(121, 167, 245, 0.98);
+}
+.agileits_w3layouts-footer a:hover{
+	color:#fff;
+	}
+  
+/* -- Responsive code -- */
+@media screen and (max-width: 1600px){}
+@media screen and (max-width: 1440px){
+	.container-w3l {
+		width: 68%;
+	}
+	
+}	
+@media screen and (max-width: 1366px){
+	.container-w3l {
+		width: 75%;
+	}
+}
+@media screen and (max-width: 1280px){
+	.container-w3l {
+		width: 77%;
+	}
+}
+@media screen and (max-width: 1080px){
+	.form-1{
+		padding: 1em 3em 4.5em;
+	}	
+	.agileits-img {
+		min-height: 322px;
+	}
+}
+@media screen and (max-width: 1050px){}
+@media screen and (max-width: 1024px){}
+@media screen and (max-width: 991px){
+	.container-w3l {
+		width: 83%;
+	}
+}
+@media screen and (max-width: 900px){
+	.agileits-img {
+		background-position: -48px 12px;
+	}
+	h1.agile-head {
+		font-size: 2.7em;
+	}
+}
+@media screen and (max-width: 800px){
+	.container-w3l {
+		width: 92%;
+	}
+}
+@media screen and (max-width: 768px){
+	.image {
+		width: 45%;
+	}
+	.main-head {
+		width: 55%;
+	}
+	.agileits-img {
+		background-position: -89px 12px;
+	}
+	.form-1 input[type=text], .form-1 input[type=password] {
+		padding: 0.9em 4em;
+		font-size:0.9em;
+	}
+	.form-1 .field i {
+		height: 42px;
+		width: 44px;
+		line-height: 3em;	
+	}
+	.form-1 button {
+		font-size: 1em;
+		padding: 10px 0 4px;
+	}
+	.agileits-img {
+		min-height: 305px;
+	}
+}
+@media screen and (max-width: 736px){
+	h1.agile-head {
+		font-size: 2.5em;
+	}
+	.agileits-img {
+		background-position: -98px 13px;
+	}
+}
+@media screen and (max-width: 667px){
+	.image ,.main-head {
+		width: 100%;
+		float: none;
+	}
+	.container-w3l {
+		width: 65%;
+	}
+	.agileits-img {
+		background-position: -12px 20px;
+		min-height:290px;
+	}
+}
+@media screen and (max-width: 600px){
+	.agileits-img {
+		min-height:250px;
+	}
+	h1.agile-head {
+		font-size: 2.3em;
+	}
+}
+@media screen and (max-width: 568px){
+	
+}	
+@media screen and (max-width: 480px){
+	h1.agile-head {
+		font-size: 2.1em;
+	}
+	.container-w3l {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 414px){
+	.container-w3l {
+		width: 83%;		
+		margin: 2em auto;
+	}
+	.form-1 {
+		padding: 1em 2em 4.5em;
+	}
+	.agileits-img {
+		min-height: 234px;
+	}
+	h1.agile-head {
+		letter-spacing:2px;
+	}
+	
+}
+@media screen and (max-width: 384px){
+	.agileits-img {
+		min-height: 212px;
+	}
+	.agileits_w3layouts-footer p {
+		font-size: 0.9em;
+	}
+}
+@media screen and (max-width: 320px){
+	.agileits-img {
+		background-position: -29px 13px;
+	}
+	h1.agile-head {
+		font-size: 1.8em;
+		letter-spacing: 1px;
+	}
+	.container-w3l {
+		width: 82%;
+	}
+	.container-w3l {
+		width: 98%;
+	}
+}
+/* -- //Responsive code -- */
+    

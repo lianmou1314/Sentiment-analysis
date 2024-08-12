@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>抓取网站文本分析</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>抓取网站文本分析</h1>
+    <form action="/crawling" method="post">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required>
+        <br>
+        <label for="api_type">API类型:</label>
+        <select id="api_type" name="api_type">
+            <option value="sentiment">情感分析</option>
+            <option value="emotion">情绪分析</option>
+        </select>
+        <br>
+        <input type="checkbox" id="show_text" name="show_text" value="True">
+        <label for="show_text">显示文本</label>
+        <br>
+        <button type="submit">分析</button>
+    </form>
+</body>
+</html>

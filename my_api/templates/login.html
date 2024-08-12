@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>精美的登录表单扁平响应式小部件模板 :: w3layouts</title>
+
+<!-- 自定义主题 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //自定义主题 -->
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<link href="static/css/style1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="//fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body class="bg-agileinfo">
+	<h1 class="agile-head">情绪分析小站</h1>
+    <div class="container-w3l">
+			<div class="image">
+				<div class="agileits-img">
+				</div>
+			</div>
+			<div class="main-head">
+				 <form action="/login" method="post" class="form-1">
+					<h2>登录</h2>
+					<p class="field">
+						<input type="text" id="username" name="username" placeholder="用户名或邮箱" required>
+						<i class="icon-user icon-large"></i>
+					</p>
+						<p class="field">
+							<input type="password" id="password" name="password" placeholder="密码" required>
+							<i class="icon-lock icon-large"></i>
+					   </p>
+					<p class="submit">
+						<button type="submit">登录</button>
+					</p>
+				</form>
+
+				<p>还没有账户？<a href="{{ url_for('register') }}">注册</a></p>
+			</div>
+			<div class="clearfix"></div>
+	</div>
+	<div class="agileits_w3layouts-footer text-center">
+
+	</div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分析结果</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>分析结果</h1>
+        {% if text %}
+            <h2>抓取的文本:</h2>
+            <p>{{ text }}</p>
+        {% endif %}
+        <div class="result">
+            <h2>情感分析结果:</h2>
+            <p>情感类别: {{ sentiment_text }}</p>
+            <p>置信度: {{ result.confidence }}</p>
+            <p>积极指数: {{ result.positive }}</p>
+            <p>消极指数: {{ result.negative }}</p>
+        </div>
+    </div>
+</body>
+</html>
